@@ -1,4 +1,5 @@
 import appLogo from "@/assets/app-logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,18 +21,24 @@ const Footer = () => {
           <div className="space-y-3">
             <h3 className="font-semibold text-white">Legal</h3>
             <div className="flex flex-col gap-2">
-              <a 
-                href="/privacy" 
+              <Link
+                to="/privacy"
                 className="text-white/70 hover:text-primary text-sm transition-colors"
               >
                 Privacy Policy
-              </a>
-              <a 
-                href="/terms" 
+              </Link>
+              <Link
+                to="/terms"
                 className="text-white/70 hover:text-primary text-sm transition-colors"
               >
                 Terms & Conditions
-              </a>
+              </Link>
+              <Link
+                to="/support"
+                className="text-white/70 hover:text-primary text-sm transition-colors"
+              >
+                Support
+              </Link>
             </div>
           </div>
 
